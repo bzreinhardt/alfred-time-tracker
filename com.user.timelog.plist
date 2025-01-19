@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.user.timelog</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/osascript</string>
+    <string>-e</string>
+    <string>tell application "Alfred 5" to run trigger "com.user.timelog.trigger" in workflow "com.alfredapp.timetracker"</string>
+  </array>
+
+  <key>StartInterval</key>
+  <integer>900</integer> <!-- 900s = 15 minutes -->
+
+  <key>RunAtLoad</key>
+  <true/>
+</dict>
+</plist>
